@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta data-i18n="meta_desc" name="description"
+        content="Portfolio de NOBLOT Hugo, développeur web junior et étudiant en 2nd année de BUT MMI" />
+    <title data-i18n="page_title">NOBLOT Hugo Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-main">
+            <div class="main-content">
+                <h1>
+                    Noblot Hugo <br />
+                    <p data-i18n="job">Développeur Junior</p>
+                </h1>
+                <h2 data-i18n="study">2ème année de BUT MMI</h2>
+                <h3>📍Troyes, France</h3>
+                <!-- <div class="socials">
+                    <a href="#" target="_blank" class="social-link"><img src="img/Linkedin_Logo.svg"
+                            alt="Logo Linkedin"></a>
+                    <a href="#" target="_blank" class="social-link"><img src="img/Github_Logo.svg"
+                            alt="Logo GitHub"></a>
+                </div> -->
+            </div>
+            <img src="img/photoprofil.webp" alt="Photo de Noblot Hugo" class="photo-corporate" draggable="false" />
+        </div>
+
+        <div class="contact-me">
+            <a data-i18n="contact_me" onclick="ContactPopup()" href="#">Contactez-moi</a>
+        </div>
+
+        <div id="popup">
+            <div class="popup-header">
+                <h2 data-i18n="contact_me">Contactez-moi</h2>
+                <span class="close" onclick="ClosePopup()"><img src="img/cross.webp" alt="" /></span>
+            </div>
+            <div class="popup-content">
+                <span>
+                    <p>
+                        Email :<a href="mailto: hugo.noju9@gmail.com" class="email"> hugo.noju9@gmail.com</a>
+                    </p>
+                    <button data-i18n="copy" class="copyButton" onclick="CopyText()">Copier</button>
+                </span>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/hugo-noblot-4b23832aa/" target="_blank"
+                        class="social-link"><img src="img/Linkedin_Logo.svg" alt="Logo Linkedin" /></a>
+                    <a href="https://github.com/HugoNblt" target="_blank" class="social-link"><img
+                            src="img/Github_Logo.svg" alt="Logo GitHub" /></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="arrow" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" height="800px"
+            width="800px" version="1.1" id="Layer_1" viewBox="0 0 512.002 512.002" xml:space="preserve">
+            <g>
+                <g>
+                    <path
+                        d="M498.837,65.628c-7.957-3.328-17.152-1.472-23.253,4.629L256,289.841L36.416,70.257    c-6.101-6.101-15.275-7.936-23.253-4.629C5.184,68.913,0,76.721,0,85.34v106.667c0,5.675,2.24,11.093,6.251,15.083    l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251L505.751,207.09    c4.011-3.989,6.251-9.408,6.251-15.083V85.34C512,76.721,506.816,68.913,498.837,65.628z" />
+                </g>
+            </g>
+        </svg> -->
+
+        <svg viewBox="0 0 428 166" fill="none" class="transition-svg" preserveAspectRatio="none">
+            <path class="path1" stroke="none"
+                d="M0 95.6124L21.1375 96.8674C42.1958 98.0759 84.4708 100.586 126.667 99.7028C168.863 98.8661 211.138 94.6828 253.333 87.1528C295.529 79.6693 337.804 68.7926 380 71.3026C422.196 73.7661 464.471 89.5698 506.667 104.583C548.863 119.643 591.138 133.867 633.333 132.24C675.529 130.613 717.804 113.136 738.862 104.351L760 95.6124V11.9457L738.862 13.2007C717.804 14.4093 675.529 16.9193 633.333 16.0361C591.138 15.1994 548.863 11.0161 506.667 7.20463C464.471 3.43963 422.196 0 380 0C337.804 0 295.529 3.43963 253.333 4.64815C211.138 5.90315 168.863 4.97352 126.667 5.81018C84.4708 6.69333 42.1958 9.29629 21.1375 10.6443L0 11.9457V95.6124Z" />
+            <path class="path2" stroke="none"
+                d="M0 125.825L21.1375 132.891C42.1958 139.909 84.4708 154.04 126.667 159.431C168.863 164.87 211.138 161.616 253.333 151.158C295.529 140.699 337.804 123.036 380 125.965C422.196 128.94 464.471 152.459 506.667 164.266C548.862 176.025 591.138 176.025 633.333 168.031C675.529 160.082 717.804 144.093 738.862 136.144L760 128.149V94.6828L738.862 103.421C717.804 112.206 675.529 129.683 633.333 131.31C591.138 132.937 548.862 118.714 506.667 103.654C464.471 88.6402 422.196 72.8365 380 70.373C337.804 67.863 295.529 78.7396 253.333 86.2232C211.138 93.7532 168.863 97.9365 126.667 98.7732C84.4708 99.6563 42.1958 97.1463 21.1375 95.9378L0 94.6828V170Z" />
+            <path class="path3" stroke="none"
+                d="M0 165.535H21.1375C42.1958 165.535 84.4708 165.535 126.667 165.535C168.863 165.535 211.138 165.535 253.333 165.535C295.529 165.535 337.804 165.535 380 165.535C422.196 165.535 464.471 165.535 506.667 165.535C548.862 165.535 591.138 165.535 633.333 165.535C675.529 165.535 717.804 165.535 738.862 165.535H760V125.661L738.862 129.252C717.804 132.822 675.529 140.003 633.333 143.573C591.138 147.164 548.862 147.164 506.667 141.882C464.471 136.579 422.196 126.016 380 124.68C337.804 123.365 295.529 131.298 253.333 135.995C211.138 140.692 168.863 142.153 126.667 139.711C84.4708 137.289 42.1958 130.943 21.1375 127.79L0 124.617V165.535Z" />
+        </svg>
+    </header>
+    <div class="acessibility-features">
+            <div class="translation">
+                <label for="language-select"></label>
+                <select name="language-select" id="language-select">
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                    <option value="de">Deustch</option>
+                </select>
+            </div>
+        </div>
+    <main>
+        <article class="projets">
+            <h2 data-i18n="projects_title">Mes Projets</h2>
+            <div class="project-grid">
+                <div class="projet">
+                    <img class="project-img" src="img/ZeroG-Logo.webp" alt="Projet Zero-G Productions illustration" />
+                    <div class="projet-description">
+                        <h3>Zero-G Productions</h3>
+                        <p data-i18n="p1_desc">
+                            Projet personel de média sur les montagnes russes. Contenu vidéo
+                            "démonstration" de montagnes russes et photographie (site web en cours de développement)
+                        </p>
+                        <div class="project-bottom">
+                            <div class="used">
+                                <span class="used-item">HTML/CSS</span>
+                                <span class="used-item">Suite Adobe</span>
+                            </div>
+                            <a data-i18n="visit" href="https://linktr.ee/ZeroGProd" target="_blank"
+                                class="project-link">Visiter
+                                <img src="img/external-link.svg" class="external-link" alt="external-link" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <img class="project-img" src="img/Erasmus.webp" alt="Projet Erasmus illustration" />
+                    <div class="projet-description">
+                        <h3 data-i18n="p2_title">Journal de Bord Erasmus</h3>
+                        <p data-i18n="p2_desc">
+                            Projet Personel de Journal de Bord à propos de mon échange
+                            International en Finlande de Janvier à Mai 2026
+                        </p>
+                        <div class="project-bottom">
+                            <div class="used">
+                                <span class="used-item">HTML/CSS</span>
+                                <span class="used-item">PHP</span>
+                                <span class="used-item">Git</span>
+                            </div>
+                            <a data-i18n="visit" href="https://mmi24e14.mmi-troyes.fr/erasmus/" target="_blank"
+                                class="project-link">Visiter
+                                <img src="img/external-link.svg" class="external-link"
+                                    alt="Lien Journal De Bord Erasmus" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <img class="project-img" src="img/SAE202.webp" alt="Projet SAE202 illustration" />
+                    <div class="projet-description">
+                        <h3 data-i18n="p3_title">SAE202 L'Étage 13</h3>
+                        <p data-i18n="p3_desc">
+                            Projet Universitaire en agence de 4 personnes, conceptualisation
+                            d'une Murder Party
+                        </p>
+                        <div class="project-bottom">
+                            <div class="used">
+                                <span class="used-item">HTML/CSS</span>
+                                <span class="used-item">PHP</span>
+                                <span class="used-item">Git</span>
+                            </div>
+                            <a data-i18n="visit" href="https://sae202.mmi24e14.mmi-troyes.fr/" target="_blank"
+                                class="project-link">Visiter
+                                <img src="img/external-link.svg" class="external-link" alt="Lien SAE 202" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <img class="project-img" src="img/DataRail.webp" alt="Projet Datarail illustration" />
+                    <div class="projet-description">
+                        <h3>SAE303 Datarail</h3>
+                        <p data-i18n="p4_desc">
+                            Projet Universitaire en agence de 2 personnes, utilisation de
+                            données Open Data pour création d'un site qui à comme but de
+                            promouvoir le voyage en train. (actuellement en refonte)
+                        </p>
+                        <div class="project-bottom">
+                            <div class="used">
+                                <span class="used-item">HTML/CSS</span>
+                                <span class="used-item">Javascript (API)</span>
+                            </div>
+                            <a data-i18n="visit" href="https://sae303.mmi24c04.mmi-troyes.fr/" target="_blank"
+                                class="project-link">Visiter
+                                <img src="img/external-link.svg" class="external-link" alt="Lien SAE 303" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="about-me">
+            <h2 data-i18n="about_me">À Propos De Moi</h2>
+            <div class="about-container">
+                <div class="responsive-about">
+                    <!-- <div class="profile">
+                        <img src="img/photo corporate.jpg" alt="Photo de Noblot Hugo" class="photo-corporate">
+                        <h3>NOBLOT Hugo</h3>
+                    </div> -->
+
+                    <div class="about-tags">
+                        <div class="tag">
+                            <p data-i18n="tag_dev">Développeur Web Junior</p>
+                        </div>
+                        <div class="tag">
+                            <p>📍Troyes, France</p>
+                        </div>
+                        <div class="tag">
+                            <p data-i18n="study">BUT MMI 2ème année</p>
+                        </div>
+                        <div class="tag">
+                            <p data-i18n="tag_finland">Échange International en Finlande</p>
+                        </div>
+                        <div class="tag">
+                            <p data-i18n="tag_lang">Français Natif / Anglais C1</p>
+                        </div>
+                    </div>
+                    <div class="parcours">
+                        <h2 data-i18n="path_title">Parcours</h2>
+                        <div class="parcours-list">
+                            <div>
+                                <h3 class="diplome">
+                                    <span data-i18n="edu1">Brevet des Collèges - Mention Très Bien</span>
+                                    <p data-i18n="got" class="obtained">Obtenu</p>
+                                </h3>
+                                <p>Cité Scolaire Gaston Bachelard / Bar-Sur-Aube</p>
+                            </div>
+                            <div>
+                                <h3 class="diplome">
+                                    <span data-i18n="edu2_title">Bac Technologique STI2D - Mention Assez Bien</span>
+                                    <p data-i18n="got" class="obtained">Obtenu</p>
+                                </h3>
+                                <p>Cité Scolaire Gaston Bachelard / Bar-Sur-Aube</p>
+                            </div>
+                            <div>
+                                <h3 class="diplome">
+                                    <span data-i18n="edu3_title">BUT Métiers du Multimédia et de l'Internet</span>
+                                    <p data-i18n="doing" class="encours">En Cours</p>
+                                </h3>
+                                <p>IUT de Troyes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>NOBLOT Hugo - Portfolio 2026</p>
+        <!-- <p>Développé 100% à la main</p> -->
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/hugo-noblot-4b23832aa" target="_blank" class="social-link"><img
+                    src="img/Linkedin_Logo.svg" alt="Logo Linkedin" /></a>
+            <a href="https://github.com/HugoNblt" target="_blank" class="social-link"><img src="img/Github_Logo.svg"
+                    alt="Logo GitHub" /></a>
+        </div>
+    </footer>
+</body>
+
+</html>
