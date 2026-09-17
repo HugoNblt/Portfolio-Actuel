@@ -407,7 +407,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 36px;
+  width: min(100%, 560px);
+  padding: 12px;
 }
 .about-container {
   display: flex;
@@ -441,42 +443,44 @@ main {
 .about-container .about-tags .tag p {
   background-color: #0b1120;
   color: #fff;
-  padding: 10px 10px;
+  padding: 13px 14px;
   border-radius: 10px;
-  font-size: 0.94rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
 }
 .parcours {
   border-radius: 0.7rem;
-  width: 400px;
+  width: min(100%, 520px);
   background-color: #0b1120;
 }
 .parcours h2 {
   border-radius: 0.7rem;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
-  padding: 10px;
+  padding: 13px;
   background-color: #0b1120;
 }
 .parcours .parcours-list {
-  padding: 10px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 .parcours .parcours-list div .diplome {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
   color: #fff;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 10px;
 }
 .parcours .parcours-list div .obtained,
 .parcours .parcours-list div .encours {
   padding: 5px;
   border-radius: 10px;
   background-color: #4ade80;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   color: #fff;
   height: fit-content;
 }
@@ -484,14 +488,15 @@ main {
   background-color: #fbbf24;
 }
 .parcours .parcours-list div p {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
   color: #afafaf;
 }
 footer {
   background-color: #0b1120;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px;    
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -500,7 +505,7 @@ footer {
 }
 @media (min-width: 768px) {
   .project-grid {
-    grid-template-columns: repeat(2, 353px);
+    grid-template-columns: repeat(3, 353px);
     grid-template-rows: repeat(2, auto);
     gap: 30px;
     justify-items: center;
@@ -513,10 +518,9 @@ footer {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: 750px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    gap: 28px;
+    width: min(100%, 980px);
+    padding: 28px 16px;
   }
   .responsive-about .profile {
     min-width: 180px;
@@ -524,8 +528,9 @@ footer {
   }
   .responsive-about .about-tags {
     height: 100%;
-    gap: 8px;
-    width: 400px;
+    gap: 10px;
+    flex: 1 1 0;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -539,6 +544,10 @@ footer {
     height: 100%;
     display: flex;
     align-items: center;
+  }
+  .responsive-about .parcours {
+    flex: 1 1 0;
+    width: auto;
   }
   .responsive-about .about-tags :nth-child(1) {
     grid-column: 1/6;
