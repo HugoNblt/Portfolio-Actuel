@@ -88,6 +88,9 @@ header h3 {
 .contact-me {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
   padding: 36px;
 }
 .contact-me a {
@@ -108,6 +111,15 @@ header h3 {
   transition: all 0.2s ease-in-out;
   background-color: rgb(231.202970297, 25.797029703, 127.2475247525);
   box-shadow: 0 0 20px rgb(236 72 153 / 0.5);
+}
+.contact-me a:last-child {
+  background-color: transparent;
+  border: 1px solid #ec4899;
+  box-shadow: none;
+}
+.contact-me a:last-child:hover {
+  background-color: rgb(236 72 153 / 0.15);
+  box-shadow: 0 0 12px rgb(236 72 153 / 0.25);
 }
 #popup {
   animation: fadeIn 0.3s ease-in-out;
@@ -481,7 +493,7 @@ main {
   border-radius: 10px;
   background-color: #4ade80;
   font-size: 0.65rem;
-  color: #fff;
+  color: #030303;
   height: fit-content;
 }
 .parcours .parcours-list div .encours {
@@ -502,6 +514,17 @@ footer {
   gap: 12px;
   align-items: center;
   justify-content: center;
+}
+footer .cv-link {
+  border: 1px solid #ec4899;
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+footer .cv-link:hover {
+  background-color: #ec4899;
 }
 @media (min-width: 768px) {
   .project-grid {
